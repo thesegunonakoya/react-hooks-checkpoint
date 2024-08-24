@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+
 const Card = styled.div`
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -10,26 +11,31 @@ const Card = styled.div`
   text-align: center;
 `;
 
+
 const Image = styled.img`
   width: 100%;
   height: auto;
   border-radius: 8px;
 `;
 
+
 const Title = styled.h2`
   font-size: 1.5rem;
   margin: 8px 0;
 `;
+
 
 const Description = styled.p`
   font-size: 1rem;
   color: #555;
 `;
 
+
 const Rating = styled.p`
   font-size: 1rem;
   color: #f39c12;
 `;
+
 
 function MovieCard({ movie }) {
   return (
@@ -41,5 +47,6 @@ function MovieCard({ movie }) {
     </Card>
   );
 }
+
 
 export default MovieCard;
