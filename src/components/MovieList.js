@@ -1,7 +1,7 @@
-// src/components/MovieList.js
 import React from "react";
 import styled from "styled-components";
 import MovieCard from "./MovieCard";
+
 
 const List = styled.div`
   display: flex;
@@ -9,6 +9,7 @@ const List = styled.div`
   justify-content: center;
   padding: 16px;
 `;
+
 
 function MovieList({ movies }) {
   return (
@@ -19,5 +20,6 @@ function MovieList({ movies }) {
     </List>
   );
 }
+
 
 export default MovieList;
