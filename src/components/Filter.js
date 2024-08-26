@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+
 const FilterContainer = styled.div`
   margin: 20px;
   padding: 20px;
@@ -10,6 +11,7 @@ const FilterContainer = styled.div`
   text-align: center;
 `;
 
+
 const Input = styled.input`
   padding: 10px;
   margin: 5px;
@@ -18,6 +20,7 @@ const Input = styled.input`
   width: calc(50% - 20px);
   box-sizing: border-box;
 `;
+
 
 const Button = styled.button`
   padding: 10px 20px;
@@ -33,6 +36,7 @@ const Button = styled.button`
   }
 `;
 
+
 function Filter({ onFilter }) {
   const [title, setTitle] = useState("");
   const [rating, setRating] = useState("");
@@ -40,6 +44,7 @@ function Filter({ onFilter }) {
   const handleFilter = () => {
     onFilter({ title, rating });
   };
+
 
   return (
     <FilterContainer>
@@ -59,5 +64,6 @@ function Filter({ onFilter }) {
     </FilterContainer>
   );
 }
+
 
 export default Filter;
