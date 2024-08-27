@@ -3,6 +3,7 @@ import styled from "styled-components";
 import MovieList from "./components/MovieList";
 import Filter from "./components/Filter";
 
+
 const AppContainer = styled.div`
   font-family: "Arial", sans-serif;
   background-color: #ecf0f1;
@@ -11,10 +12,12 @@ const AppContainer = styled.div`
   text-align: center;
 `;
 
+
 const Heading = styled.h1`
   color: #2c3e50;
   margin-bottom: 20px;
 `;
+
 
 const AddMovieButton = styled.button`
   padding: 10px 20px;
@@ -29,6 +32,7 @@ const AddMovieButton = styled.button`
     background-color: #1e8449;
   }
 `;
+
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -50,6 +54,7 @@ function App() {
     setFilteredMovies(filtered);
   };
 
+
   return (
     <AppContainer>
       <Heading>Movie App</Heading>
@@ -70,5 +75,6 @@ function App() {
     </AppContainer>
   );
 }
+
 
 export default App;
